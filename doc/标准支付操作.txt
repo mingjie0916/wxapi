@@ -1,0 +1,53 @@
+https://www.paypal-biz.com/developer/
+http://paypal.ebay.cn/integrationcenter/list__resource_1.html
+http://sjolzy.cn/E-commerce-system-uses-paypal-payment-interface-of-the-program-flow-and-communication-interface.html
+http://www.kaiyuanba.cn/html/1/131/227/4496.htm
+http://blog.ifeng.com/article/3188337.html
+http://hi.baidu.com/thunten/item/bdc4d9d07e5e681fe0f46f95
+
+Sale为即时付款, Authorization为预授权, order 为订单付款
+
+
+卖家帐号设置
+1. 
+访问网站 http://www.stellarwebsolutions.com/certificates/stellar_cert_builder.php
+填入email创建证书，有两份，一份公有，一份私有，请下载到本地的cert目录下。
+
+2. 在constants.php文件设置您的Paypal邮箱
+define("DEFAULT_EMAIL_ADDRESS", "YOUR PAYPAL ACCOUNT");	//zjq
+
+3. 在constants.php文件设置您的公有和私有证书
+define("DEFAULT_EWP_CERT_PATH", "cert/myt_pubcert.pem");	//zjq
+define("DEFAULT_EWP_PRIVATE_KEY_PATH", "cert/myt_prvkey.pem");	//zjq
+ 
+4. 用您的帐号登录Paypal，开通IPN/PDT支持支付方式
+1) 点击 “我的帐号” My Account
+2) 点击 “我的信息” Profile
+3) 点击 “Website payment certificates”  (即支付证书相关的链接), 进入此页面
+4) 上传你的公有证书文件， 比如 “myt_pubcert.pem”， 上传完成后，会得到你公有证书在PAYPAL上的Cert ID， 请记录Cert ID
+5) 下载PAYPAL给你的公有证书 (PayPal Public Certificate ) ， 比如文件名为paypal_cert_pem.txt
+
+
+5. 点击Profile， 点击“Website payments preferences”(网站付款偏好) 链接进入此页面，
+   ( 参考 http://blog.csdn.net/lee576/article/details/3229647 )
+   1) "Auto Return" 设置为 On
+   2) RETURN URL 设置为 “PDTResponse.php”对应的URL
+   3) “Payment Data Transfer” 设置为On
+   4) 此时，可得到 Identity Token, 比如 "7LeFcHQW4pfFo2xjI0gOlkINbIC4fpxZxosDcLKE6tyA7ocmcQB48P_O4fm"
+   5) 其它默认
+
+6. 在 constants.php中设置IDENTITY_TOKEN
+  define("DEFAULT_IDENTITY_TOKEN", "7LeFcHQW4pfFo2xjI0gOlkINbIC4fpxZxosDcLKE6tyA7ocmcQB48P_O4fm");  //PP网站找
+
+
+7. 在 constants.php中设置CERT_ID
+define("DEFAULT_CERT_ID", "BQFU7RF433RDS");	//zjq
+
+8. 在 constants.php中设置PAYPAL公有证书路径
+define("PAYPAL_CERT_PATH", "cert/paypal_cert_pem.txt"); //paypal
+
+
+9.
+
+10.
+

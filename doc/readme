@@ -1,0 +1,57 @@
+对于正在构建的自定义购物车： 请将以下凭证信息存储在访问受限的安全位置。
+凭证          API签名
+API用户名   test_api1.maoyt.com
+API密码     ZDATGUF7KZEBG22K
+签名        AqiWeROlGhYbT0VlXgTYltpKSgtJAxv0yBUgHLEpb49GfBG-ovay3Ohs
+申请日期    2011年08月11日 17:56:19 CTT
+
+http://www.maoyt.com
+wknHlwdb0DgxBb7p5_yHRr32VCfNBXUUQ5NzCxqPQz9rFrwtsyht2m6Othu
+
+
+http://hi.baidu.com/autojsp/blog/item/299e59faeb3984066c22eba3.html
+
+
+| pp_standard | pp_standard_email                       | ayaliu@gmail.com | paypal商家账户
+| pp_standard | pp_standard_pdt_token                   |                  | 好像没用? 
+| pp_standard | pp_standard_test                        | 1                | 是否是sandbox测试方式
+| pp_standard | pp_standard_transaction                 | 0                | 0-authorization, 1-sale
+| pp_standard | pp_standard_debug                       | 1                | 是否debug方式，debug方式写日志
+| pp_standard | pp_standard_total                       | 1000             | 此支付方式最多支付的数量
+| pp_standard | pp_standard_canceled_reversal_status_id | 7                | 以下10种都是paypal支付确认时返回的状态对应的订单状态ID 
+| pp_standard | pp_standard_completed_status_id         | 7                | 
+| pp_standard | pp_standard_denied_status_id            | 7                | 
+| pp_standard | pp_standard_expired_status_id           | 7                | 
+| pp_standard | pp_standard_failed_status_id            | 7                | 
+| pp_standard | pp_standard_pending_status_id           | 7                | 
+| pp_standard | pp_standard_processed_status_id         | 7                | 
+| pp_standard | pp_standard_refunded_status_id          | 7                | 
+| pp_standard | pp_standard_reversed_status_id          | 7                | 
+| pp_standard | pp_standard_voided_status_id            | 7                | 
+| pp_standard | pp_standard_geo_zone_id                 | 0                | 
+| pp_standard | pp_standard_status                      | 1                | 是否启用
+| pp_standard | pp_standard_sort_order                  | 0                | 
+
+
+问题：
+1、审核设计
+    
+2、线上库、线下库
+   
+
+   公司产品库在国内: 卖家修改/审核比较频繁,加快发布修改审核等操作
+            买家主要是读
+    线下库在国内 读写
+    线上库也在国内,上线操作不会失败,只要解决 同步问题即可,主要增加主从同步问题
+    
+
+3、图片存储
+
+4、订单在哪写的问题
+       订单主库在国外 :加快下订单,修改订单的时间,加快支付接口调用的时间
+            国内的卖家少量的修改,写数据 链接国外库或者接口
+            运营统计等访问国内从库
+
+5、时间不一致的问题？国外美国时区，国内中国时区
+    时间存储以0时区时间为准,不同地方展示,按照不同时区展示
+    获取时间转为0时区

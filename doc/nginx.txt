@@ -1,0 +1,32 @@
+
+# 卖家管理后台
+root /home/www/tradeonline/manage/www;
+server_name manage.myecer.com;
+
+
+# tradeadmin后台
+root /home/www/tradeonline/tradeadmin/www;
+server_name tradeadmin.myecer.com;
+
+
+# 大平台
+root /home/www/tradeonline/looksaving/www;
+server_name www.myecer.com;
+
+
+# tradeweb，买家后台（vps）
+root /home/www/tradeonline/tradeweb/www;
+server_name *.car-mobile-dvr.com;
+
+
+# 图片访问（vps）
+root /home/www/tradeonline/tradeimg/www;
+server_name img.myecer.com;
+
+
+/home/www/tradeonline/pubres
+公共资源文件，通过软连接的方式嵌入到各个项目中
+
+
+
+

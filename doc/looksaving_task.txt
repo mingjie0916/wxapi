@@ -1,0 +1,132 @@
+6  个工作日
+
+1. 抓数据
+2. 登录
+3. 今天测试
+
+ 周日上线 最迟 倒数第二天
+ 周一放假
+
+
+ 支持png 图片,图库
+
+
+Looksaving前台：
+	改新bug?
+
+	1. 首页  lyd  check
+			滚动问题 zty
+			登录链接 lyd
+			顶部/底部
+
+			其他页面的顶部 弹出分类菜单  ok
+
+
+	2. 一级分类页            zjq 链接,最新产品   check
+	3. 专题页               zjq 图片  check
+
+	6. 登录注册页及忘记密码页	gj     check
+	5. 产品详细页(过渡页)		gj   ok
+	10. 展厅-产品详细页		gj	 ok   todo: 参数 底部图片 wish list  check
+				@todo 评论使用异步获取  ok
+				@物流,  ok
+				@todo @参数传递
+
+	4. 搜索结果页(含分类页)    zx  ,seo  ?
+
+
+
+
+	7. sitemap页: 规则待定    zjq    check
+	12. All Categories页     zjq  	check
+	8. 展厅首页              lyd     check 顶部导航错误
+		点号问题??
+		http://dev.www.looksaving.com/index.php?r=room/aboutus&cid=363
+
+
+
+
+	9. 展厅-产品首页/列表页    zx check
+	  @todo rewrite  导航 面包屑  ok
+
+
+	11. 展厅介绍性页面-aboutus, factory, contactus,etc  zx  check
+			BizImg::showImg 编辑器图片 cid ok
+
+
+Looksaving后台：
+	1. 买家首页				zx ok
+			zyt /index.php?r=member 样式问题
+				滚动条问题
+
+	2. 浏览历史              lyd     ??  接口ok
+			底部增加 js 统计 浏览历史
+
+	3. feedbacks			lyd     check
+			From: ok
+
+	4. wishlist              lyd	check
+	5. storelist            lyd     check
+	6. settings               zx     check
+		样式 zyt
+
+
+Looksaving管理：tradeadmin
+	1. 首页广告维护          sdm    check
+	2. 分类页维护            sdm
+	3. 专题页维护: 人工选择非末梢分类(利用发布产品类目选择框)   sdm
+
+
+	4. 有效分类管理 			sdm  check
+
+	url规则		 ok
+
+	图片路径      ok
+
+
+#静态化：    sdm
+	首页，一级分类页，专题页 , sitemap
+
+
+分类选择: @todo sdm
+	必须选择 叶子节点
+	必须选择 非叶子节点
+	不收限制
+
+
+online 库
+
+国内预览环境
+
+url规则
+img.looksaving.com/dddd/dddd
+search-dfdfff_ddd.jpg
+search_dfdfff-ddd.jpg
+twig
+
+公司logo
+{{img(0,0 ,"logo",0,cid)}}
+公司图片  ok
+{{img($picid, $name, "c",$size='100x100',cid)}}
+产品图片
+{{img($picid, $name, "p",$size='100x100',cid)}}
+
+looksaving.com 图片
+{{img($picid, $name, "p",$size='100x100',0)}}
+
+浏览历史 check
+?
+
+过度页地址
+     * /index.php?r=search/detail&pid=$pid&pname=xxxx
+
+已经分类
+
+二,3,4级分类
+
+/index.php?r=search/index&catecode=$catecode&catename=xxxxx
+
+
+
+
+

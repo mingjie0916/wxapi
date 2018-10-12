@@ -1,0 +1,10 @@
+图片放大镜 
+https://github.com/mindprojects/jqzoom
+
+图片水平滚动
+http://www.oschina.net/p/amazon_scroller
+
+菜单隐藏/显示
+jquery
+
+

@@ -1,0 +1,27 @@
+//´´½¨
+junction d:\code\tradeonline\tradeweb\protected\busi "d:\code\tradeonline\protected\busi"
+junction d:\code\tradeonline\tradeweb\protected\class "d:\code\tradeonline\protected\class"
+junction d:\code\tradeonline\tradeweb\protected\extensions "d:\code\tradeonline\protected\extensions"
+junction d:\code\tradeonline\tradeweb\protected\models "d:\code\tradeonline\protected\models"
+junction d:\code\tradeonline\tradeweb\protected\vendors "d:\code\tradeonline\protected\vendors"
+
+junction d:\code\tradeonline\tradeadmin\protected\busi "d:\code\tradeonline\protected\busi"
+junction d:\code\tradeonline\tradeadmin\protected\class "d:\code\tradeonline\protected\class"
+junction d:\code\tradeonline\tradeadmin\protected\extensions "d:\code\tradeonline\protected\extensions"
+junction d:\code\tradeonline\tradeadmin\protected\models "d:\code\tradeonline\protected\models"
+junction d:\code\tradeonline\tradeadmin\protected\vendors "d:\code\tradeonline\protected\vendors"
+
+junction d:\code\tradeonline\manage\protected\busi "d:\code\tradeonline\protected\busi"
+junction d:\code\tradeonline\manage\protected\class "d:\code\tradeonline\protected\class"
+junction d:\code\tradeonline\manage\protected\extensions "d:\code\tradeonline\protected\extensions"
+junction d:\code\tradeonline\manage\protected\models "d:\code\tradeonline\protected\models"
+junction d:\code\tradeonline\manage\protected\vendors "d:\code\tradeonline\protected\vendors"
+
+
+junction d:\code\tradeonline\tradeweb\www\js "d:\code\tradeonline\pubres\js"
+junction d:\code\tradeonline\manage\www\pub "d:\code\tradeonline\pubres\pub"
+junction d:\code\tradeonline\tradeweb\www\themes\tpl1\res\js "d:\code\tradeonline\pubres\js"
+junction d:\code\tradeonline\tradeweb\www\themes\tpl1\res\pub "d:\code\tradeonline\pubres\pub"
+
+//É¾³ý
+junction -d d:\code\trade\gia\protected\benavior
